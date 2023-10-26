@@ -125,11 +125,6 @@ spec:
         - mountPath: /tmp/.ssh
           name: publickey
           readOnly: true
-      securityContext:
-        fsGroup: 1000
-        runAsGroup: 1000
-        runAsNonRoot: true
-        runAsUser: 1000
       serviceAccountName: bank-of-anthos
       terminationGracePeriodSeconds: 5
       volumes:

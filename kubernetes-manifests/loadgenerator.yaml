@@ -55,13 +55,6 @@ spec:
           requests:
             cpu: 100m
             memory: 512Mi
-        securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-            - all
-          privileged: false
-          readOnlyRootFilesystem: true
       restartPolicy: Always
       securityContext:
         fsGroup: 1000

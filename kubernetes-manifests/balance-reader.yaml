@@ -115,13 +115,6 @@ spec:
             cpu: 100m
             ephemeral-storage: 0.5Gi
             memory: 256Mi
-        securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-            - all
-          privileged: false
-          readOnlyRootFilesystem: true
         startupProbe:
           failureThreshold: 30
           httpGet:
